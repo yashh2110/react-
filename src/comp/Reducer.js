@@ -35,7 +35,7 @@ function Reducer(){
                 dispatch({type:"ERROR"})
             })
     })
-    return(
+    return( 
         <div>
             {items.loading ? "loading": items.items.map(item=><div key={item.id}>{item.title}</div>)}
         </div>

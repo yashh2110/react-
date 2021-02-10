@@ -7,6 +7,7 @@ function Nav() {
                 <Link to="/todo">Todo</Link>
                 <Link to="/fetch">Fetch</Link>
                 <Link to="/reducefetch">Reducefetch</Link>
+                <Link to="/userform"> simple_userform</Link>
         </div>
     )
 }
