@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Counter from './comp/Counter';
+import Fetch from './comp/Fetch';
+import Todo from './comp/todo';
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
+import Nav from './comp/Nav';
+function App(){
+    return(<div>
+        {/* <Counter/>
+         
+        {/* <Fetch /> */}
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+        <Router >
+         <Nav />
+
+            <Switch >   
+                <Route exact path="/" component={Counter}></Route>
+                <Route exact path="/todo" component={Todo}></Route>
+                <Route exact path="/Fetch" component={Fetch}></Route>
+            </Switch>
+        </Router>
+
+    </div>)
 }
-
-export default App;
+export default App
