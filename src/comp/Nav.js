@@ -6,6 +6,7 @@ function Nav() {
                 <Link to="/">Home</Link>
                 <Link to="/todo">Todo</Link>
                 <Link to="/fetch">Fetch</Link>
+                <Link to="/reducefetch">Reducefetch</Link>
         </div>
     )
 }
